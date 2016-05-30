@@ -1,9 +1,9 @@
-1º Baixar o TrabIa final.tar.gz;
+1Âº Baixar o TrabIa final.tar.gz no link: https://github.com/bieljose/Trabalho-Ia;
 
-2º Extrair a pasta;
+2Âº Extrair a pasta;
 
-3º No Eclipse, file, import, abrir a pasta general, clicar Existing Projects into Workspace, Next;
+3Âº No Eclipse, file, import, abrir a pasta general, clicar Existing Projects into Workspace, Next;
 
-4º Browse, selecione a pasta e clique em finish;
+4Âº Browse, selecione a pasta e clique em finish;
 
-5º Se a biblioteca Weka ainda não estiver instalada, clique com o botão direito em cima de JRE System Libary, Build Path, Configure build path, Add external JARs, va até a weka.jar, em seguida, ok.
+5Âº Se a biblioteca Weka ainda nÃ£o estiver instalada, clique com o botÃ£o direito em cima de JRE System Libary, Build Path, Configure build path, Add external JARs, va atÃ© a weka.jar, em seguida, ok.
