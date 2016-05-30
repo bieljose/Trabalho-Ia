@@ -1,0 +1,91 @@
+
+% A empresa de aluguel de carros deseja abrir uma filial em uma grande cidade, sabendo que depois de feito um breve estudo, 
+% que foi constatado que as pessoas dessa cidade utilizam muito o transporte de aluguel, em virtude do alto fluxo de turistas e 
+% pela comodidade pelo aluguel de veiculos.
+% Pensando nessa grande possibilidade a empresa fez um levantamento sobre que tipo de automovel, e selecionou tres categorias onde seriam mais solicitadas pela maioria 
+% dos clientes. Sao as categorias: Popular, Esportivo e SUV.
+% Essas tres categorias foram selecionadas a partir do tamanho do porta malas, para que os turistas possam carregar as bagagens conforme as suas necessidades e 
+% pela altura, onde os turistas podem escolher um carro mais alto para mais pessoas ou um de menor altura para um passeio mais simples.
+%
+% Porta Malas: Popular 	 250 - 400
+%			   SUV 	  	 1600 - 2250
+%			   Esportivo 480 - 750
+%
+% Altura do Veiculo: Popular 	1.37 - 1.59
+%			  		 SUV 	  	1.62 - 1.71
+%			  		 Esportivo  1.37 - 1.56
+%
+% Numero de intancias = 60
+
+@relation carrostrab
+
+@attribute Cambio {Automatico, Manual}
+@attribute Blindagem {Sim, Nao}
+@attribute Portas REAL
+@attribute Combustivel {Gasolina, Flex}
+@attribute Porta_malas(L) REAL
+@attribute Altura(m) REAL
+@attribute Preco REAL
+@attribute Classificador {Popular, SUV, Esportivo}
+
+@data
+Manual, Nao, 4.0, Gasolina, 350.0, 1.56, 7990.0, Popular
+Manual, Nao, 2.0, Gasolina, 275.0, 1.42, 10890.0, Popular
+Manual, Nao, 4.0, Gasolina, 300.0, 1.48, 10790.0, Popular
+Manual, Nao, 4.0, Gasolina, 290.0, 1.59, 11000.0, Popular
+Manual, Nao, 4.0, Gasolina, 526.0, 1.44, 12900.0, Esportivo
+Manual, Nao, 4.0, Gasolina, 280.0, 1.48, 9900.0, Popular
+Manual, Nao, 4.0, Gasolina, 750.0, 1.46, 15990.0, Esportivo
+Manual, Nao, 4.0, Gasolina, 506.0, 1.42, 12500.0, Esportivo
+Manual, Nao, 4.0, Flex, 1875.0, 1.67, 22900.0, SUV
+Automatico, Sim, 4.0, Gasolina, 2050.0, 1.78, 21950.0, SUV
+Automatico, Sim, 4.0, Gasolina, 2100.0, 1.75, 37990.0, SUV
+Automatico, Sim, 4.0, Gasolina, 1875.0, 1.73, 36900.0, SUV
+Automatico, Sim, 4.0, Flex, 1600.0, 1.71, 39990.0, SUV
+Automatico, Sim, 4.0, Gasolina, 2025.0, 1.68, 43800.0, SUV
+Automatico, Sim, 4.0, Gasolina, 1900.0, 1.7, 43990.0, SUV
+Automatico, Sim, 4.0, Flex, 2000.0, 1.71, 44000.0, SUV
+Automatico, Sim, 4.0, Gasolina, 1950.0, 1.62, 44990.0, SUV
+Automatico, Sim, 4.0, Gasolina, 2250.0, 1.71, 46900.0, SUV
+Automatico, Sim, 4.0, Gasolina, 1935.0, 1.83, 29990.0, SUV
+Automatico, Sim, 4.0, Gasolina, 2000.0, 1.68, 30500.0, SUV
+Automatico, Sim, 4.0, Flex, 2100.0, 1.75, 49900.0, SUV
+Manual, Sim, 4.0, Flex, 1850.0, 1.69, 31900.0, SUV
+Manual, Sim, 4.0, Gasolina, 2000.0, 1.71, 22500.0, SUV
+Manual, Nao, 4.0, Gasolina, 300.0, 1.41, 10900.0, Popular
+Manual, Nao, 2.0, Flex, 290.0, 1.48, 9900.0, Popular
+Manual, Nao, 4.0, Flex, 250.0, 1.54, 11900.0, Popular
+Manual, Nao, 4.0, Gasolina, 390.0, 1.43, 10900.0, Popular
+Manual, Nao, 4.0, Flex, 390.0, 1.42, 11900.0, Popular
+Manual, Nao, 2.0, Gasolina, 285.0, 1.52, 6900.0, Popular
+Manual, Nao, 4.0, Flex, 300.0, 1.56, 7000.0, Popular
+Manual, Nao, 2.0, Gasolina, 280.0, 1.58, 8500.0, Popular
+Manual, Nao, 2.0, Gasolina, 360.0, 1.43, 9000.0, Popular
+Manual, Nao, 2.0, Flex, 295.0, 1.47, 9500.0, Popular
+Manual, Nao, 2.0, Gasolina, 250.0, 1.42, 9600.0, Popular
+Manual, Nao, 2.0, Gasolina, 315.0, 1.37, 10000.0, Popular
+Manual, Nao, 4.0, Flex, 310.0, 1.55, 10900.0, Popular
+Manual, Nao, 2.0, Gasolina, 365.0, 1.44, 11500.0, Popular
+Manual, Nao, 2.0, Flex, 300.0, 1.47, 11750.0, Popular
+Manual, Nao, 4.0, Gasolina, 1800.0, 1.67, 21500.0, SUV
+Automatico, Nao, 4.0, Gasolina, 2050.0, 1.65, 21900.0, SUV
+Automatico, Sim, 4.0, Gasolina, 2250.0, 1.86, 22000.0, SUV
+Automatico, Sim, 4.0, Gasolina, 2100.0, 1.72, 21500.0, SUV
+Automatico, Sim, 4.0, Gasolina, 2200.0, 1.69, 29000.0, SUV
+Manual, Nao, 2.0, Gasolina, 550.0, 1.37, 13500.0, Esportivo
+Manual, Nao, 4.0, Flex, 514.0, 1.44, 15000.0, Esportivo
+Manual, Nao, 4.0, Gasolina, 554.0, 1.44, 16900.0, Esportivo
+Manual, Nao, 4.0, Flex, 486.0, 1.48, 17500.0, Esportivo
+Manual, Nao, 4.0, Flex, 520.0, 1.44, 17900.0, Esportivo
+Manual, Nao, 4.0, Flex, 600.0, 1.43, 19500.0, Esportivo
+Manual, Nao, 4.0, Flex, 650.0, 1.46, 20000.0, Esportivo
+Manual, Nao, 4.0, Flex, 635.0, 1.48, 19990.0, Esportivo
+Manual, Nao, 4.0, Flex, 596.0, 1.52, 18500.0, Esportivo
+Manual, Nao, 4.0, Flex, 625.0, 1.47, 19250.0, Esportivo
+Manual, Nao, 4.0, Flex, 750.0, 1.56, 19550.0, Esportivo
+Manual, Nao, 4.0, Gasolina, 580.0, 1.43, 18600.0, Esportivo
+Manual, Nao, 4.0, Gasolina, 660.0, 1.45, 16500.0, Esportivo
+Manual, Nao, 4.0, Flex, 600.0, 1.44, 16990.0, Esportivo
+Manual, Nao, 4.0, Flex, 690.0, 1.47, 18000.0, Esportivo
+Manual, Nao, 4.0, Flex, 560.0, 1.44, 12990.0, Esportivo
+Manual, Nao, 4.0, Flex, 540.0, 1.48, 15550.0, Esportivo
